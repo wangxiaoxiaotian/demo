@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: demo
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/ssh
+    username: root
+    password: root123456
+    type: com.alibaba.druid.pool.DruidDataSource
+mybatis:
+  type-aliases-package: com.example.demologin.pojo
+  mapper-locations: classpath:mapper/*.xml
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
